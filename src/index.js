@@ -47,7 +47,24 @@ const pizzaData = [
 ];
 
 function App() {
-  return <h1>Hello React!</h1>;
+  return (
+    <div>
+      <h1>Hello React!</h1>
+      <Pizza />
+      <Pizza />
+      <Pizza />
+    </div>
+  );
+}
+
+function Pizza() {
+  return (
+    <div>
+      <img src="pizzas/spinaci.jpg" alt="pizza spinaci" />
+      <h2>Pizza Spinaci</h2>
+      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
+    </div>
+  );
 }
 
 // React 18
